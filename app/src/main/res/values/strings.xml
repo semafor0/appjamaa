@@ -8,4 +8,10 @@
     <string name="register">Register</string>
     <string name="account_id">Account ID</string>
     <string name="password">Password</string>
+
+    <!-- Welcome Screen -->
+    <string name="skip">SKIP</string>
+    <string name="next">NEXT</string>
+    <string name="start">START</string>
+
 </resources>
