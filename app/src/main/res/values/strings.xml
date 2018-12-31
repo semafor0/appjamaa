@@ -1,17 +1,23 @@
 <resources>
     <string name="app_name">appjamaa</string>
-    <string name="forgot_password">Forgot Password</string>
+    <string name="forgot_password">Forgot Your Password?</string>
     <string name="logo">Logo</string>
     <string name="jamaa">JAMAA</string>
     <string name="sign_in">Sign In</string>
     <string name="no_account">Don\'t have an account?</string>
     <string name="register">Register</string>
-    <string name="account_id">Account ID</string>
+    <string name="account_id">Email</string>
     <string name="password">Password</string>
     <string name="sign_up">Sign up</string>
     <string name="your_email">Enter Your Email</string>
     <string name="create_password">Create a new password</string>
-    <string name="confirm_password">Repeat your password to confirm</string>
+    <string name="confirm_password">Repeat your password</string>
+    <string name="reset_password">No problem. Enter your email and we\'ll send you a link to reset your password.</string>
+    <string name="recover_password">An email with a link to reset your password has been sent to INFO@INFO.COM. Check your email to log back into your account."</string>
+
+
+
+
 
 
 
@@ -19,5 +25,11 @@
     <string name="skip">SKIP</string>
     <string name="next">NEXT</string>
     <string name="start">START</string>
+
+
+    <!-- Success Screens -->
+    <string name="success">Success!</string>
+    <string name="confirmation_email">Thanks for signing up. We sent an email to EXAMPLE@INFO.COM. Check your email and click on the confirmation link to log in..</string>
+    <string name="back_login">Back to Log In</string>
 
 </resources>

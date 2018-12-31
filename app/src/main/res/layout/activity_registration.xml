@@ -7,7 +7,20 @@
     android:background="@drawable/background"
     tools:layout_editor_absoluteY="25dp">
 
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/back_arrow"
+        android:maxHeight="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
+        android:id="@+id/sign_up_banner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -15,33 +28,36 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/sign_up"
-        android:textSize="60dp"
+        android:layout_marginBottom="16dp"
         android:fontFamily="@font/texta"
+        android:text="@string/sign_up"
         android:textColor="@color/textColorGreen"
+        android:textSize="48dp"
+        android:paddingTop="50dp"
         app:layout_constraintBottom_toTopOf="@+id/input_register_email"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/input_register_email"
         style="@style/MyTextInput"
-        android:layout_height="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/input_create_password"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sign_up_banner">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/edit_text_email_register"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="247dp"
+            android:layout_height="match_parent"
             android:ems="10"
             android:hint="@string/your_email"
             android:inputType="textEmailAddress" />
@@ -50,15 +66,17 @@
     <android.support.design.widget.TextInputLayout
         android:id="@+id/input_create_password"
         style="@style/MyTextInput"
-        android:layout_height="25dp"
+        android:layout_width="253dp"
+        android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/input_confirm_password"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_register_email">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/edit_text_create_password"
@@ -72,23 +90,24 @@
     <android.support.design.widget.TextInputLayout
         android:id="@+id/input_confirm_password"
         style="@style/MyTextInput"
-        android:layout_height="25dp"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="180dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_create_password">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/edit_text_confirm_password"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:ems="10"
-            android:hint="@string/confirm_password"
-             />
+            android:hint="@string/confirm_password" />
     </android.support.design.widget.TextInputLayout>
 
     <Button
