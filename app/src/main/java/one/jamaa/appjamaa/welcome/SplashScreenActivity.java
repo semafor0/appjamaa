@@ -1,4 +1,4 @@
-package one.jamaa.appjamaa.main;
+package one.jamaa.appjamaa.welcome;
 
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.util.Log;
 
 import one.jamaa.appjamaa.R;
-import one.jamaa.appjamaa.welcome.WelcomeActivity;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
@@ -32,6 +31,13 @@ public class SplashScreenActivity extends AppCompatActivity {
         @Override
         protected Void doInBackground(Void... voids) {
             Log.d(TAG, "doInBackground: ");
+
+            // TODO Thread.sleep() ist nur zum testen
+            try {
+                Thread.sleep(2500);
+            } catch (InterruptedException e) {
+                Log.d(TAG, "doInBackground: " + e.getMessage());
+            }
             return null;
         }
 
@@ -40,6 +46,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             super.onPostExecute(aVoid);
             Log.d(TAG, "onPostExecute: ");
             startActivity(new Intent(SplashScreenActivity.this, WelcomeActivity.class));
+            finish();
         }
     }
 }

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "831327167501",
+    "firebase_url": "https://jamaa-b63c8.firebaseio.com",
+    "project_id": "jamaa-b63c8",
+    "storage_bucket": "jamaa-b63c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831327167501:android:8d8d6039f9a4ce70",
+        "android_client_info": {
+          "package_name": "one.jamaa.appjamaa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831327167501-g7bjeaeforlsajogdhg7q761ie83r61j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "one.jamaa.appjamaa",
+            "certificate_hash": "6159fb835f069127237de7be1d5f1d5c57a6cd53"
+          }
+        },
+        {
+          "client_id": "831327167501-4kseup3mg9qqss684vijhguh7nsa3jgu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBByYnGRKJSL3iGtgFC35qensjgNefqkzk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "831327167501-4kseup3mg9qqss684vijhguh7nsa3jgu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

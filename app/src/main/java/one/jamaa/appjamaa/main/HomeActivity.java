@@ -1,7 +1,9 @@
-package one.jamaa.appjamaa;
+package one.jamaa.appjamaa.main;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import one.jamaa.appjamaa.R;
 
 public class HomeActivity extends AppCompatActivity {
 
