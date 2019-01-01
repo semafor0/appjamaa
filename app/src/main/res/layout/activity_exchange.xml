@@ -4,7 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main.exchange.ExchangeActivity">
+    tools:context=".main.exchange.ExchangeActivity"
+
+    >
+
+
+    <ExpandableListView
+        android:id="@+id/exchange_list"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+
+
+
+
+
 
     <!-- bottom navigation bar-->
     <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx

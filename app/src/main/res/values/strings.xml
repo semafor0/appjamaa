@@ -14,7 +14,7 @@
     <string name="confirm_password">Repeat your password</string>
     <string name="reset_password">No problem. Enter your email and we\'ll send you a link to reset your password.</string>
     <string name="recover_password">An email with a link to reset your password has been sent to INFO@INFO.COM. Check your email to log back into your account."</string>
-
+    <string name="title_contracts">Create a Contract</string>
 
     <!-- Welcome Screen -->
     <string name="skip">SKIP</string>
@@ -26,5 +26,19 @@
     <string name="success">Success!</string>
     <string name="confirmation_email">Thanks for signing up. We sent an email to EXAMPLE@INFO.COM. Check your email and click on the confirmation link to log in..</string>
     <string name="back_login">Back to Log In</string>
+
+
+
+    <!-- Cards -->
+    <string name="project_title">Project Title</string>
+    <string name="project_symbol">Project Symbol</string>
+    <string name="project_size">0000000</string>
+    <string name="project_size_label">Funding Goal</string>
+    <string name="project_est_return">000000</string>
+    <string name="project_est_return_label">Est. Return</string>
+    <string name="project_length">000 days</string>
+    <string name="project_length_label">Length</string>
+    <string name="project_trust_level_label">Trust Level</string>
+    <string name="select_profit_sharing">Profit Sharing Contract</string>
 
 </resources>

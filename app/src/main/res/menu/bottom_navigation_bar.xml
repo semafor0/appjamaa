@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
     <item
         android:id="@+id/navigation_profile"
-        android:icon="@drawable/navigation_profile"
-        android:title="Profile" />
+        android:icon="@drawable/ic_project"
+        android:title="Profile"
+        />
     <item
         android:id="@+id/navigation_contract"
-        android:icon="@drawable/navigation_contract"
+        android:icon="@drawable/ic_assignment_black_24dp"
         android:title="Contract" />
     <item
         android:id="@+id/navigation_exchange"
-        android:icon="@drawable/navigation_exchange"
+        android:icon="@drawable/ic_exchange"
         android:title="Exchange" />
     <item
         android:id="@+id/navigation_wallet"
-        android:icon="@drawable/navigation_wallet"
+        android:icon="@drawable/ic_wallet"
         android:title="Wallet" />
     <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
         android:title="Home" />
 
 </menu>
