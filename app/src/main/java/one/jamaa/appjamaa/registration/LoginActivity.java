@@ -17,7 +17,7 @@ import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 import com.google.firebase.auth.FirebaseUser;
 
 import one.jamaa.appjamaa.R;
-import one.jamaa.appjamaa.main.HomeActivity;
+import one.jamaa.appjamaa.main.profil.ProfileListActivity;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -117,7 +117,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         if (user != null) {
             Boolean verification = user.isEmailVerified();
             if (verification) {
-                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                Intent intent = new Intent(LoginActivity.this, ProfileListActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
                 finish();
@@ -132,7 +132,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     private void checkUser() {
         if(user != null){
-            Intent intentLoggedIn = new Intent(LoginActivity.this, HomeActivity.class);
+            Intent intentLoggedIn = new Intent(LoginActivity.this, ProfileListActivity.class);
             intentLoggedIn.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intentLoggedIn);
             finish();

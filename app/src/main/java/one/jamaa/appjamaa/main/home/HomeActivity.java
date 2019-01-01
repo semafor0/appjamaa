@@ -1,4 +1,4 @@
-package one.jamaa.appjamaa.main;
+package one.jamaa.appjamaa.main.home;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
