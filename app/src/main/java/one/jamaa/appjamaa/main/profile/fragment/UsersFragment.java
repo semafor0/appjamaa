@@ -10,12 +10,13 @@ import android.view.ViewGroup;
 
 import one.jamaa.appjamaa.R;
 
-public class Projects extends Fragment {
+public class UsersFragment extends Fragment {
+
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_projects, container, false);
+        View view = inflater.inflate(R.layout.fragment_users, container, false);
         return view;
     }
 }
