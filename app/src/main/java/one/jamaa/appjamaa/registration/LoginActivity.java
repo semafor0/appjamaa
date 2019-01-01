@@ -17,7 +17,7 @@ import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 import com.google.firebase.auth.FirebaseUser;
 
 import one.jamaa.appjamaa.R;
-import one.jamaa.appjamaa.main.profil.ProfileListActivity;
+import one.jamaa.appjamaa.main.profile.ProfileListActivity;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 

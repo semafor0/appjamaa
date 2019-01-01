@@ -9,4 +9,9 @@
 
     <color name="white">#fff</color>
 
+    <!-- BottomNavigationView -->
+    <color name="borderTop">@color/colorPrimaryDark</color>
+    <color name="bottomNavigationViewBackground">@color/white</color>
+    <color name="bottomNavigationViewIcon">@color/colorAccent</color>
+
 </resources>

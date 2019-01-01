@@ -20,7 +20,7 @@
         <activity android:name=".registration.LoginActivity" />
         <activity android:name=".registration.ResetActivity" />
         <activity android:name=".welcome.WelcomeActivity" />
-        <activity android:name=".main.profil.ProfileListActivity" />
+        <activity android:name=".main.profile.ProfileListActivity" />
         <activity android:name=".main.wallet.WalletActivity" />
         <activity android:name=".main.exchange.ExchangeActivity" />
         <activity android:name=".main.contract.ContractActivity" />
