@@ -15,6 +15,7 @@
     <string name="reset_password">No problem. Enter your email and we\'ll send you a link to reset your password.</string>
     <string name="recover_password">An email with a link to reset your password has been sent to INFO@INFO.COM. Check your email to log back into your account."</string>
     <string name="title_contracts">Create a Contract</string>
+    <string name="button_create_contract">Create Contract</string>
 
     <!-- Welcome Screen -->
     <string name="skip">SKIP</string>

@@ -21,9 +21,6 @@
 
         />
 
-
-
-
         <TextView
             android:text="@string/project_title"
             android:layout_width="wrap_content"
