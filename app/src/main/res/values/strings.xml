@@ -16,6 +16,21 @@
     <string name="recover_password">An email with a link to reset your password has been sent to INFO@INFO.COM. Check your email to log back into your account."</string>
     <string name="title_contracts">Create a Contract</string>
     <string name="button_create_contract">Create Contract</string>
+    <string name="label_username">Username Here</string>
+    <string name="member_since">Joined xx months ago</string>
+    <string name="number_projects">0000 projects</string>
+    <string name="invested_in">000 projects</string>
+    <string name="profitability">00%</string>
+    <string name="label_number_projects">Participated In</string>
+    <string name="label_invested_in">Invested In</string>
+    <string name="label_profitability">Profitability</string>
+
+
+
+
+
+
+
 
     <!-- Welcome Screen -->
     <string name="skip">SKIP</string>

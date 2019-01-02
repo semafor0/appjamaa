@@ -32,36 +32,38 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="145dp"
             android:layout_marginTop="20dp"
-            android:text="@string/project_title"
+            android:text="@string/label_username"
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/project_symbol"
+            android:id="@+id/member_since"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="160dp"
             android:layout_marginTop="55dp"
-            android:text="@string/project_symbol"
+            android:text="@string/member_since"
             android:textColor="#d3d3d3"
             android:textSize="10sp" />
 
         <TextView
-            android:id="@+id/project_size"
+            android:id="@+id/number_projects"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="130dp"
+            android:layout_marginLeft="120dp"
             android:layout_marginTop="90dp"
-            android:text="@string/project_size"
+            android:text="@string/number_projects"
+            android:textSize="12sp"
 
             />
 
         <TextView
-            android:id="@+id/est_return"
+            android:id="@+id/invested_in"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="210dp"
+            android:layout_marginLeft="215dp"
             android:layout_marginTop="90dp"
-            android:text="@string/project_est_return"
+            android:textSize="12sp"
+            android:text="@string/invested_in"
 
             />
 
@@ -69,50 +71,52 @@
             android:id="@+id/project_length"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="280dp"
+            android:layout_marginLeft="320dp"
             android:layout_marginTop="90dp"
-            android:text="@string/project_length"
+            android:textSize="12sp"
+            android:text="@string/profitability"
 
             />
 
         <TextView
-            android:id="@+id/project_size_label"
+            android:id="@+id/label_number_projects"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="128dp"
             android:layout_marginTop="115dp"
-            android:text="@string/project_size_label"
+            android:text="@string/label_number_projects"
             android:textSize="10sp"
 
             />
 
         <TextView
-            android:id="@+id/est_return_label"
+            android:id="@+id/label_invested_in"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="210dp"
+            android:layout_marginLeft="224dp"
             android:layout_marginTop="115dp"
-            android:text="@string/project_est_return_label"
+            android:text="@string/label_invested_in"
             android:textSize="10sp"
 
             />
 
         <TextView
-            android:id="@+id/project_length_label"
+            android:id="@+id/label_profitability"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="295dp"
+            android:layout_marginLeft="305dp"
             android:layout_marginTop="115dp"
-            android:text="@string/project_length_label"
+            android:text="@string/label_profitability"
             android:textSize="10sp"
 
             />
+
 
         <TextView
             android:id="@+id/trust_level_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="328dp"
+            android:layout_marginLeft="322dp"
             android:layout_marginTop="65dp"
             android:text="@string/project_trust_level_label"
             android:textSize="10sp" />
@@ -133,6 +137,7 @@
             android:layout_gravity="end"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="35dp" />
+
 
 
     </android.support.v7.widget.CardView>
