@@ -17,7 +17,7 @@ import one.jamaa.appjamaa.utils.BottomNavigationViewHelper;
 public class HomeActivity extends AppCompatActivity {
 
     private static final String TAG = "HomeActivity";
-    private static final int ACTIVITY_NUM = 0;
+    private static final int ACTIVITY_NUM = 4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

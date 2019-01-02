@@ -17,7 +17,7 @@ import one.jamaa.appjamaa.utils.BottomNavigationViewHelper;
 public class ExchangeActivity extends AppCompatActivity {
 
     private static final String TAG = "ExchangeActivity";
-    private static final int ACTIVITY_NUM = 2;
+    private static final int ACTIVITY_NUM = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

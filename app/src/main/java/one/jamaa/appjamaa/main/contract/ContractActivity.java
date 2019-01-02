@@ -6,18 +6,23 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 import one.jamaa.appjamaa.R;
+import one.jamaa.appjamaa.information.Projects;
+import one.jamaa.appjamaa.main.contract.fragment.NewContractFragment;
 import one.jamaa.appjamaa.registration.LoginActivity;
 import one.jamaa.appjamaa.utils.BottomNavigationViewHelper;
+import one.jamaa.appjamaa.utils.FirestoreHelper;
 
-public class ContractActivity extends AppCompatActivity {
+public class ContractActivity extends AppCompatActivity implements NewContractFragment.NewContractListener {
 
     private static final String TAG = "ContractActivity";
-    private static final int ACTIVITY_NUM = 1;
+    private static final int ACTIVITY_NUM = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +36,18 @@ public class ContractActivity extends AppCompatActivity {
         }
         setContentView(R.layout.activity_contract);
         setupBottomNavigationView();
+        Button createContract = findViewById(R.id.button_create_contract);
+        createContract.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openDialog();
+            }
+        });
+    }
+
+    private void openDialog() {
+        NewContractFragment fragment = new NewContractFragment();
+        fragment.show(getSupportFragmentManager(), "testtesttest");
     }
 
     private void setupBottomNavigationView() {
@@ -40,5 +57,11 @@ public class ContractActivity extends AppCompatActivity {
         Menu menu = bottomNavigationViewEx.getMenu();
         MenuItem menuItem = menu.getItem(ACTIVITY_NUM);
         menuItem.setChecked(true);
+    }
+
+    @Override
+    public void applyTexts(Projects project) {
+        FirestoreHelper firestoreHelper = new FirestoreHelper();
+        firestoreHelper.addProject(project);
     }
 }

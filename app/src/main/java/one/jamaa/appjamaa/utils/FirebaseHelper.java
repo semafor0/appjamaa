@@ -29,13 +29,14 @@ public class FirebaseHelper {
                Log.d(TAG, "register: success");
                sendEmailVerification();
            } else{
-               Log.d(TAG, "register: failed");
+               Log.d(TAG, "register: failed" + ": " + task.getException().getMessage());
            }
         });
     }
 
     private void sendEmailVerification() {
         Log.d(TAG, "sendEmailVerification: ");
+        FirebaseUser user = mAuth.getCurrentUser();
         if (user != null){
             user.sendEmailVerification().addOnCompleteListener(task -> {
                if(task.isSuccessful()){

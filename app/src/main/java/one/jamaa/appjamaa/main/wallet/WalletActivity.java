@@ -17,7 +17,7 @@ import one.jamaa.appjamaa.utils.BottomNavigationViewHelper;
 public class WalletActivity extends AppCompatActivity {
 
     private static final String TAG = "WalletActivity";
-    private static final int ACTIVITY_NUM = 4;
+    private static final int ACTIVITY_NUM = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

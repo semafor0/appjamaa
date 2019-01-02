@@ -28,7 +28,7 @@ public class ProfileListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate: " + FirebaseAuth.getInstance().getCurrentUser());
-        if(FirebaseAuth.getInstance().getCurrentUser().getUid() == null){
+        if(FirebaseAuth.getInstance().getCurrentUser() == null){
             Intent intent = new Intent(this, LoginActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);

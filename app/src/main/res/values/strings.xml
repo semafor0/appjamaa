@@ -41,5 +41,10 @@
     <string name="project_length_label">Length</string>
     <string name="project_trust_level_label">Trust Level</string>
     <string name="select_profit_sharing">Profit Sharing Contract</string>
+    <string name="contract">Contract</string>
+    <string name="exchange">Exchange</string>
+    <string name="wallet">Wallet</string>
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
 
 </resources>

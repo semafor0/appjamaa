@@ -1,21 +1,21 @@
 package one.jamaa.appjamaa.information;
 
-import com.google.firebase.firestore.ServerTimestamp;
-
-import java.util.Date;
-
 public class Projects {
 
-    public int iconID;
-    public String person;
-    public int profitability;
-    private @ServerTimestamp Date timestamp;
+    public String title;
+    public String user;
+    public String trust;
+    public String fundingGoal;
+    public String profit;
+    public String duration;
 
-
-    public Projects(int iconID, String person, int profitability) {
-        this.iconID = iconID;
-        this.person = person;
-        this.profitability = profitability;
+    public Projects(String title, String user, String trust, String fundingGoal, String profit, String duration) {
+        this.title = title;
+        this.user = user;
+        this.trust = trust;
+        this.fundingGoal = fundingGoal;
+        this.profit = profit;
+        this.duration = duration;
     }
 
 }
