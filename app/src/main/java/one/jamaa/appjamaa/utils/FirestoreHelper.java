@@ -26,7 +26,6 @@ public class FirestoreHelper {
 
     private FirestoreRecyclerOptions<Projects> options;
     private DocumentReference documentReference;
-    private String userID;
     private ListenerRegistration listenerRegistration;
 
     public FirestoreHelper(){
@@ -37,10 +36,6 @@ public class FirestoreHelper {
         options = new FirestoreRecyclerOptions.Builder<Projects>()
                 .setQuery(query, Projects.class)
                 .build();
-        FirebaseAuth mAuth = FirebaseAuth.getInstance();
-        if (mAuth.getCurrentUser() != null){
-            userID = mAuth.getCurrentUser().getUid();
-        }
     }
 
     public void addProject(Projects project){

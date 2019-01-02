@@ -22,11 +22,14 @@ public class FirebaseHelper {
         user = mAuth.getCurrentUser();
     }
 
-    public void register(final String email, final String password){
+    public void register(String email, String password){
         Log.d(TAG, "register: ");
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
            if (task.isSuccessful()){
+               Log.d(TAG, "register: success");
                sendEmailVerification();
+           } else{
+               Log.d(TAG, "register: failed");
            }
         });
     }
