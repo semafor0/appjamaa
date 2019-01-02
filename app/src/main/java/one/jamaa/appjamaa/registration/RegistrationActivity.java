@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import one.jamaa.appjamaa.R;
+import one.jamaa.appjamaa.utils.FirebaseHelper;
 
 public class RegistrationActivity extends AppCompatActivity {
 
@@ -17,7 +18,6 @@ public class RegistrationActivity extends AppCompatActivity {
 
     private EditText registerEmail, createPassword, confirmPassword;
     private Button registerButton;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +60,8 @@ public class RegistrationActivity extends AppCompatActivity {
             confirmPassword.requestFocus();
             return;
         }
+        FirebaseHelper firebaseHelper = new FirebaseHelper(RegistrationActivity.this);
+        firebaseHelper.register(email, password);
     }
 
     private void findViewById() {

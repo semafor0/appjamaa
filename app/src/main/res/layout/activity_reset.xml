@@ -88,7 +88,7 @@
     </android.support.design.widget.TextInputLayout>
 
     <Button
-        android:id="@+id/SubmitResetPassword"
+        android:id="@+id/button_submit_reset"
         style="@style/MyButton"
         android:layout_width="282dp"
         android:layout_height="50dp"
