@@ -12,6 +12,7 @@ import android.widget.EditText;
 
 import one.jamaa.appjamaa.R;
 import one.jamaa.appjamaa.information.Projects;
+import one.jamaa.appjamaa.utils.FirestoreHelper;
 
 public class NewContractFragment extends AppCompatDialogFragment {
 
@@ -22,6 +23,7 @@ public class NewContractFragment extends AppCompatDialogFragment {
     private EditText profit;
     private EditText duration;
     private NewContractListener listener;
+    private FirestoreHelper firestoreHelper;
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -29,6 +31,7 @@ public class NewContractFragment extends AppCompatDialogFragment {
         LayoutInflater inflater = getActivity().getLayoutInflater();
         View view = inflater.inflate(R.layout.fragment_dialog_new_contract, null);
         findViewById(view);
+        firestoreHelper = new FirestoreHelper();
         builder.setView(view)
                 .setTitle("New Contract")
                 .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -54,6 +57,18 @@ public class NewContractFragment extends AppCompatDialogFragment {
         }
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        firestoreHelper.onStart();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        firestoreHelper.onStop();
+    }
+
     private Projects createProject(){
         return new Projects(
         title.getText().toString(),
@@ -70,7 +85,7 @@ public class NewContractFragment extends AppCompatDialogFragment {
 
     private void findViewById(View view) {
         title = view.findViewById(R.id.name_project);
-        user = view.findViewById(R.id.field_location);
+        user = view.findViewById(R.id.location_project);
         trust = view.findViewById(R.id.begin_date);
         fundingGoal = view.findViewById(R.id.funding_goal);
         profit = view.findViewById(R.id.expected_profit);
