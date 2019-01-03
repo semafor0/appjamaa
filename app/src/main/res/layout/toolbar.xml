@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/textColorGreen"
+    android:elevation="4dp"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Contract"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:id="@+id/toolbar_title" />
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_chevron_left_black_24dp"/>
+
+</android.support.v7.widget.Toolbar>

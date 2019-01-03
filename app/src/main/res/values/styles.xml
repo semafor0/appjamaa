@@ -7,6 +7,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppBar">
+        <item name="android:background">@color/textColorGreen</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">28sp</item>
+
+
+
+
+    </style>
+
     <style name="MyButton">
         <item name="android:background">@drawable/button_background</item>
         <item name="android:layout_marginLeft">30dp</item>

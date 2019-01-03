@@ -69,6 +69,9 @@ public class NewContractFragment extends AppCompatDialogFragment {
         firestoreHelper.onStop();
     }
 
+
+
+
     private Projects createProject(){
         return new Projects(
         title.getText().toString(),

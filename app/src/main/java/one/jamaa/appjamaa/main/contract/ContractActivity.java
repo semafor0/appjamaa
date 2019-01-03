@@ -3,6 +3,7 @@ package one.jamaa.appjamaa.main.contract;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -35,6 +36,9 @@ public class ContractActivity extends AppCompatActivity implements NewContractFr
             finish();
         }
         setContentView(R.layout.activity_contract);
+        Toolbar toolbar = findViewById(R.id.toolbar_contract_create);
+        setSupportActionBar(toolbar);
+
         setupBottomNavigationView();
         Button createContract = findViewById(R.id.button_create_contract);
         createContract.setOnClickListener(new View.OnClickListener() {
