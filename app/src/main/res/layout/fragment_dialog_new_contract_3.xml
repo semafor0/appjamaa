@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/title_contract_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/description_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <EditText
+        android:id="@+id/funding_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter the amount of funding you are requesting"
+
+        />
+
+    <EditText
+        android:id="@+id/expected_profit_low"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter a low estimate of the total expected profit"
+        />
+
+    <EditText
+        android:id="@+id/expected_profit_high"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter a high estimate of the total expected profit"  />
+
+
+    <TextView
+        android:id="@+id/label_profit_share_percentage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_profit_share_percentage" />
+
+    <SeekBar
+        android:id="@+id/seek_bar_profit_share_percentage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_contract_3_next"
+        style="@style/MyButton"
+        android:layout_width="282dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/next_step"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -69,12 +69,12 @@ public class NewContractFragment extends AppCompatDialogFragment {
     }
 
     private void findViewById(View view) {
-        title = view.findViewById(R.id.editText1);
-        user = view.findViewById(R.id.editText2);
-        trust = view.findViewById(R.id.editText3);
-        fundingGoal = view.findViewById(R.id.editText4);
-        profit = view.findViewById(R.id.editText5);
-        duration = view.findViewById(R.id.editText6);
+        title = view.findViewById(R.id.name_project);
+        user = view.findViewById(R.id.field_location);
+        trust = view.findViewById(R.id.begin_date);
+        fundingGoal = view.findViewById(R.id.funding_goal);
+        profit = view.findViewById(R.id.expected_profit);
+        duration = view.findViewById(R.id.duration);
     }
 
 

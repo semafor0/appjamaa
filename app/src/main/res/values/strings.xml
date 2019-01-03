@@ -24,10 +24,16 @@
     <string name="label_number_projects">Participated In</string>
     <string name="label_invested_in">Invested In</string>
     <string name="label_profitability">Profitability</string>
+    <string name="next_step">Continue</string>
 
 
 
 
+
+    <!-- Contract Dialog -->
+    <string name="welcome_description">Describe your project here.</string>
+    <string name="label_profit_share_percentage">Profit Share</string>
+    <string name="confirm_contract">Confirm</string>
 
 
 
