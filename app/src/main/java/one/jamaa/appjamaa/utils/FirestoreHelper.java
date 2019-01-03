@@ -7,6 +7,7 @@ import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -19,6 +20,7 @@ import com.google.firebase.firestore.Query;
 import javax.annotation.Nullable;
 
 import one.jamaa.appjamaa.information.Projects;
+import one.jamaa.appjamaa.information.Users;
 
 public class FirestoreHelper {
 
@@ -29,10 +31,11 @@ public class FirestoreHelper {
     private ListenerRegistration listenerRegistration;
 
     public FirestoreHelper(){
+        String userID = FirebaseAuth.getInstance().getCurrentUser().getUid();
         FirebaseFirestore firebaseFirestore = FirebaseFirestore.getInstance();
         CollectionReference collectionReference = firebaseFirestore.collection("Projects");
-        documentReference = collectionReference.document();
-        Query query = collectionReference.orderBy("timestamp", Query.Direction.ASCENDING);
+        documentReference = collectionReference.document(userID);
+        Query query = collectionReference.orderBy("duration", Query.Direction.ASCENDING);
         options = new FirestoreRecyclerOptions.Builder<Projects>()
                 .setQuery(query, Projects.class)
                 .build();
@@ -41,6 +44,21 @@ public class FirestoreHelper {
     public void addProject(Projects project){
         Log.d(TAG, "addProject: ");
         documentReference.set(project).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                Log.d(TAG, "onSuccess: ");
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Log.d(TAG, "onFailure: " + e.getMessage());
+            }
+        });
+    }
+
+    public void addUser(Users user){
+        Log.d(TAG, "addUser: ");
+        documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
                 Log.d(TAG, "onSuccess: ");

@@ -9,6 +9,10 @@ public class Projects {
     public String profit;
     public String duration;
 
+    public Projects(){
+
+    }
+
     public Projects(String title, String user, String trust, String fundingGoal, String profit, String duration) {
         this.title = title;
         this.user = user;
@@ -17,5 +21,30 @@ public class Projects {
         this.profit = profit;
         this.duration = duration;
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public String getTrust() {
+        return trust;
+    }
+
+    public String getFundingGoal() {
+        return fundingGoal;
+    }
+
+    public String getProfit() {
+        return profit;
+    }
+
+    public String getDuration() {
+        return duration;
+    }
+
 
 }

@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import one.jamaa.appjamaa.R;
 import one.jamaa.appjamaa.utils.FirebaseHelper;
+import one.jamaa.appjamaa.utils.Utils;
 
 public class RegistrationActivity extends AppCompatActivity {
 
@@ -24,6 +25,7 @@ public class RegistrationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate: ");
         setContentView(R.layout.activity_registration);
+        Utils.hideKeyboard(this);
         findViewById();
         registerButton.setOnClickListener(view -> {
             registerUser();

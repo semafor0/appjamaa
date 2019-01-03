@@ -26,12 +26,6 @@
     <string name="label_profitability">Profitability</string>
 
 
-
-
-
-
-
-
     <!-- Welcome Screen -->
     <string name="skip">SKIP</string>
     <string name="next">NEXT</string>
@@ -42,7 +36,6 @@
     <string name="success">Success!</string>
     <string name="confirmation_email">Thanks for signing up. We sent an email to EXAMPLE@INFO.COM. Check your email and click on the confirmation link to log in..</string>
     <string name="back_login">Back to Log In</string>
-
 
 
     <!-- Cards -->

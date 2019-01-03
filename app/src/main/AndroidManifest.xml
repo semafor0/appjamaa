@@ -27,6 +27,7 @@
         <activity android:name=".main.exchange.ExchangeActivity" />
         <activity android:name=".main.contract.ContractActivity" />
         <activity android:name=".main.home.HomeActivity" />
+        <activity android:name=".tests.TestActivity"></activity>
     </application>
 
 </manifest>

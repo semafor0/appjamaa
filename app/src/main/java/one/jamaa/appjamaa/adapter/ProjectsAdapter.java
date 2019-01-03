@@ -6,9 +6,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
+
 import com.google.firebase.firestore.DocumentSnapshot;
 
 import one.jamaa.appjamaa.R;
@@ -35,6 +37,10 @@ public class ProjectsAdapter extends FirestoreRecyclerAdapter<Projects, Projects
     @Override
     protected void onBindViewHolder(@NonNull MyViewHolder holder, int position, @NonNull Projects model) {
         Log.d(TAG, "onBindViewHolder: ");
+        holder.title.setText(model.getTitle());
+        holder.fundingGoal.setText(model.getFundingGoal());
+        holder.profit.setText(model.getProfit());
+        holder.duration.setText(model.getDuration());
     }
 
     public void deleteItem(int position){
@@ -42,11 +48,16 @@ public class ProjectsAdapter extends FirestoreRecyclerAdapter<Projects, Projects
     }
 
 
-    public class MyViewHolder extends RecyclerView.ViewHolder{
+    class MyViewHolder extends RecyclerView.ViewHolder{
 
-        public MyViewHolder(@NonNull View itemView) {
+        TextView title, fundingGoal, profit, duration;
+
+        MyViewHolder(@NonNull View itemView) {
             super(itemView);
-
+            title = itemView.findViewById(R.id.project_title);
+            fundingGoal = itemView.findViewById(R.id.project_size);
+            profit = itemView.findViewById(R.id.est_return);
+            duration = itemView.findViewById(R.id.project_length);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

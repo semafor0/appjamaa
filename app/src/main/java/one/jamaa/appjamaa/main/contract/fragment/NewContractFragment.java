@@ -12,6 +12,7 @@ import android.widget.EditText;
 
 import one.jamaa.appjamaa.R;
 import one.jamaa.appjamaa.information.Projects;
+import one.jamaa.appjamaa.utils.FirestoreHelper;
 
 public class NewContractFragment extends AppCompatDialogFragment {
 
@@ -22,6 +23,7 @@ public class NewContractFragment extends AppCompatDialogFragment {
     private EditText profit;
     private EditText duration;
     private NewContractListener listener;
+    private FirestoreHelper firestoreHelper;
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -29,6 +31,7 @@ public class NewContractFragment extends AppCompatDialogFragment {
         LayoutInflater inflater = getActivity().getLayoutInflater();
         View view = inflater.inflate(R.layout.fragment_dialog_new_contract, null);
         findViewById(view);
+        firestoreHelper = new FirestoreHelper();
         builder.setView(view)
                 .setTitle("New Contract")
                 .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -52,6 +55,18 @@ public class NewContractFragment extends AppCompatDialogFragment {
         } catch (ClassCastException e){
             throw new ClassCastException(context.toString());
         }
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        firestoreHelper.onStart();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        firestoreHelper.onStop();
     }
 
     private Projects createProject(){
