@@ -6,26 +6,17 @@
 
 
 
-    <!--If your shape requires only one solid color-->
-    <!--<solid
-        android:color="#FFFFFF" />-->
+
 
     <size
         android:width="120dp"
         android:height="96dp" />
 
-    <!--Use android:dashWidth="2dp" and android:dashGap="2dp"
-    to add dashes to your stroke-->
+
     <stroke
         android:width="2dp"
         android:color="@color/textColorGreen" />
 
-    <!--If you want to add padding-->
-    <!-- <padding
-         android:left="10dp"
-         android:top="20dp"
-         android:right="40dp"
-         android:bottom="8dp" />-->
 
 </shape>
 

@@ -7,6 +7,11 @@
     android:layout_height="match_parent"
     >
 
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar_contract_create"
+        />
+
     <TextView
         android:id="@+id/title_contract_duration"
         android:layout_width="wrap_content"
@@ -17,7 +22,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="How long?"
+        android:text="How long will it take?"
         android:textSize="28sp"
         app:layout_constraintBottom_toTopOf="@+id/begin_date"
         app:layout_constraintEnd_toEndOf="parent"

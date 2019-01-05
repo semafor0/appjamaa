@@ -24,9 +24,7 @@
         android:layout_centerHorizontal="true"
         android:text="What's the Plan?"
         android:textSize="28sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="64dp" />
+        />
 
     <TextView
         android:id="@+id/description_contract"
@@ -34,15 +32,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="134dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_centerHorizontal="true"
         android:text="Contract Description"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title_contract_description" />
+        android:textSize="14sp"
+        />
 
     <EditText
         android:id="@+id/name_project"
@@ -50,7 +46,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="206dp"
+        android:layout_marginTop="198dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
@@ -58,12 +54,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name of your project (ex. Fishing Boat)"
-        app:layout_constraintBottom_toTopOf="@+id/location_project"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/description_contract"
-        app:layout_constraintVertical_bias="0.0" />
+        />
 
     <EditText
         android:id="@+id/location_project"
@@ -71,7 +62,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="282dp"
+        android:layout_marginTop="262dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
