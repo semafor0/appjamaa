@@ -17,7 +17,7 @@ public class TestActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
-        FirestoreHelper firestoreHelper = new FirestoreHelper();
+        FirestoreHelper firestoreHelper = new FirestoreHelper(getResources().getString(R.string.projects));
         adapter = new ProjectsAdapter(firestoreHelper.getOptions());
         RecyclerView recyclerView = findViewById(R.id.recycler_view_test);
         recyclerView.setHasFixedSize(true);

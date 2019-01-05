@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TODO elevation warning! -->
+<android.support.v7.widget.Toolbar
+    android:id="@+id/tool_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bar_height"
+    android:background="@color/textColorGreen"
+    android:elevation="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

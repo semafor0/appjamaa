@@ -1,6 +1,7 @@
 package one.jamaa.appjamaa.main.contract;
 
 import android.content.Intent;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,15 +15,16 @@ import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 import one.jamaa.appjamaa.R;
 import one.jamaa.appjamaa.information.Projects;
-import one.jamaa.appjamaa.main.contract.fragment.NewContractFragment;
+import one.jamaa.appjamaa.main.contract.fragment.NewContractFragment_1;
 import one.jamaa.appjamaa.registration.LoginActivity;
 import one.jamaa.appjamaa.utils.BottomNavigationViewHelper;
 import one.jamaa.appjamaa.utils.FirestoreHelper;
 
-public class ContractActivity extends AppCompatActivity implements NewContractFragment.NewContractListener {
+public class ContractActivity extends AppCompatActivity implements NewContractFragment_1.NewContractListener {
 
     private static final String TAG = "ContractActivity";
     private static final int ACTIVITY_NUM = 0;
+    private ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,14 +42,9 @@ public class ContractActivity extends AppCompatActivity implements NewContractFr
         createContract.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openDialog();
+                startActivity(new Intent(ContractActivity.this, NewContractActivity.class));
             }
         });
-    }
-
-    private void openDialog() {
-        NewContractFragment fragment = new NewContractFragment();
-        fragment.show(getSupportFragmentManager(), "testtesttest");
     }
 
     private void setupBottomNavigationView() {
@@ -61,7 +58,7 @@ public class ContractActivity extends AppCompatActivity implements NewContractFr
 
     @Override
     public void applyTexts(Projects project) {
-        FirestoreHelper firestoreHelper = new FirestoreHelper();
+        FirestoreHelper firestoreHelper = new FirestoreHelper(getResources().getString(R.string.projects));
         firestoreHelper.addProject(project);
     }
 }

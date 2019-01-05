@@ -7,7 +7,6 @@ import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -30,10 +29,10 @@ public class FirestoreHelper {
     private DocumentReference documentReference;
     private ListenerRegistration listenerRegistration;
 
-    public FirestoreHelper(){
+    public FirestoreHelper(String information){
         String userID = FirebaseAuth.getInstance().getCurrentUser().getUid();
         FirebaseFirestore firebaseFirestore = FirebaseFirestore.getInstance();
-        CollectionReference collectionReference = firebaseFirestore.collection("Projects");
+        CollectionReference collectionReference = firebaseFirestore.collection(information);
         documentReference = collectionReference.document(userID);
         Query query = collectionReference.orderBy("duration", Query.Direction.ASCENDING);
         options = new FirestoreRecyclerOptions.Builder<Projects>()
