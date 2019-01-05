@@ -6,9 +6,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
+
 import com.google.firebase.firestore.DocumentSnapshot;
 
 import one.jamaa.appjamaa.R;
@@ -35,6 +37,10 @@ public class ProjectsAdapter extends FirestoreRecyclerAdapter<Projects, Projects
     @Override
     protected void onBindViewHolder(@NonNull MyViewHolder holder, int position, @NonNull Projects model) {
         Log.d(TAG, "onBindViewHolder: ");
+        holder.title.setText(model.getTitle());
+        holder.fundingGoal.setText(model.getFundingGoal());
+        holder.profit.setText(model.getProfit());
+        holder.duration.setText(model.getDuration());
     }
 
     public void deleteItem(int position){

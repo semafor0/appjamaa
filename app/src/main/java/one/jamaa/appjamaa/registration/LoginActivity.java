@@ -18,6 +18,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 import one.jamaa.appjamaa.R;
 import one.jamaa.appjamaa.main.profile.ProfileListActivity;
+import one.jamaa.appjamaa.utils.Utils;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -34,6 +35,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate: ");
         setContentView(R.layout.activity_login);
+        Utils.hideKeyboard(this);
         mAuth = FirebaseAuth.getInstance();
         user = mAuth.getCurrentUser();
         Log.d(TAG,"user: " + user);

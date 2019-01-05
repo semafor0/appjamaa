@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.google.firebase.auth.FirebaseAuth;
 
 import one.jamaa.appjamaa.R;
+import one.jamaa.appjamaa.utils.Utils;
 
 public class ResetActivity extends AppCompatActivity {
 
@@ -23,6 +24,7 @@ public class ResetActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate: ");
         setContentView(R.layout.activity_reset);
+        Utils.hideKeyboard(this);
         EditText emailReset = findViewById(R.id.edit_text_email_reset);
         Button reset = findViewById(R.id.button_submit_reset);
         reset.setOnClickListener(new View.OnClickListener() {
