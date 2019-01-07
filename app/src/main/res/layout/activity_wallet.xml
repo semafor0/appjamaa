@@ -8,11 +8,10 @@
 
     <ImageView
         android:id="@+id/bg_top"
-        android:layout_width="396dp"
-        android:layout_height="123dp"
-        android:src="@drawable/bg_top"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="399dp"
+        android:layout_height="133dp"
+        android:src="@drawable/top"
+        />
 
     <!-- bottom navigation bar-->
     <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx

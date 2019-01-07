@@ -9,11 +9,14 @@
 
         <ImageView
             android:id="@+id/bg_top"
-            android:layout_width="396dp"
-            android:layout_height="123dp"
-            android:src="@drawable/bg_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/top"
+            android:adjustViewBounds="true"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
 
 
         <RadioButton
@@ -74,6 +77,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
+            android:gravity="center"
             android:text="@string/button_create_contract"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

@@ -72,7 +72,7 @@ public class NewContractFragment_1 extends Fragment {
     }
 
     private void findViewById(View view) {
-        title = view.findViewById(R.id.name_project);
+        title = view.findViewById(R.id.input_name_project);
         user = view.findViewById(R.id.dummy_user);
         trust = view.findViewById(R.id.dummy_trust);
         fundingGoal = view.findViewById(R.id.funding_goal);

@@ -34,6 +34,8 @@
     <string name="welcome_description">Describe your project here.</string>
     <string name="label_profit_share_percentage">Profit Share</string>
     <string name="confirm_contract">Confirm</string>
+    <string name="label_project_name">Project Name</string>
+    <string name="create_contract">Create Contract</string>
 
 
 
@@ -42,6 +44,8 @@
     <string name="skip">SKIP</string>
     <string name="next">NEXT</string>
     <string name="start">START</string>
+
+    <string name="prompt_seed_phrase">Any funds you deposit to Jamaa will be stored on your device, meaning we do not have access to your funds. To secure your funds against the loss or damage of your device, generate a 12-word seed phrase now."</string>
 
 
     <!-- Success Screens -->

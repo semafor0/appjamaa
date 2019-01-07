@@ -6,6 +6,7 @@
 
     <color name="textColorHint">#46764b</color>
     <color name="textColorGreen">#22DD6D</color>
+    <color name="darkGreen">#239D57</color>
 
     <color name="white">#fff</color>
     <color name="black">#000</color>

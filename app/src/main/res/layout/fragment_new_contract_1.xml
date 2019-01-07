@@ -44,41 +44,47 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title_contract_description" />
 
-    <EditText
-        android:id="@+id/name_project"
-        android:layout_width="280dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="206dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name of your project (ex. Fishing Boat)"
-        app:layout_constraintBottom_toTopOf="@+id/location_project"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/description_contract"
-        app:layout_constraintVertical_bias="0.0" />
 
-    <EditText
-        android:id="@+id/location_project"
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_name_project"
+        style="@style/MyTextInput"
         android:layout_width="280dp"
         android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="282dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Location"
         android:layout_centerHorizontal="true"
-        />
+        android:layout_marginTop="190dp"
+
+
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/label_name_project"
+            android:layout_width="247dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="@string/label_project_name"
+            android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_project_location"
+        style="@style/MyTextInput"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="252dp"
+
+
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/label_project_location"
+            android:layout_width="247dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="@string/label_project_name"
+            android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
 
     <EditText
         android:id="@+id/description_project"
@@ -105,6 +111,7 @@
         android:layout_centerHorizontal="true"
         android:text="Project description: Describe here why you think your project is likely to be successful and why you think it's a good idea for others to invest in it."
         />
+
     <EditText
         android:id="@+id/dummy_trust"
         android:layout_width="300dp"
@@ -117,8 +124,9 @@
         android:layout_centerHorizontal="true"
         android:text="Project description: Describe here why you think your project is likely to be successful and why you think it's a good idea for others to invest in it."
         />
+
     <Button
-        android:id="@+id/button_contract_1_next"
+        android:id="@+id/button_contract_next"
         style="@style/MyButton"
         android:layout_width="282dp"
         android:layout_height="55dp"
@@ -126,7 +134,7 @@
         android:layout_marginBottom="28dp"
         android:layout_centerHorizontal="true"
         android:text="@string/next_step"
-
+        android:gravity="center"
         />
 
 
