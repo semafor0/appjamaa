@@ -8,9 +8,6 @@
     >
 
 
-    <include layout="@layout/toolbar"
-        android:id="@+id/toolbar_contract_create"
-        />
 
     <TextView
         android:id="@+id/title_contract_duration"
