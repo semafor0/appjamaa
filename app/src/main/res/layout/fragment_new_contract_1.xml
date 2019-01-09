@@ -122,7 +122,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_centerHorizontal="true"
-        android:text="Project description: Describe here why you think your project is likely to be successful and why you think it's a good idea for others to invest in it."
+        android:hint="Project description: Describe here why you think your project is likely to be successful and why you think it's a good idea for others to invest in it."
         />
 
     <Button
