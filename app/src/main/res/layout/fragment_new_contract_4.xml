@@ -12,9 +12,10 @@
         android:id="@+id/title_contract_summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
         android:layout_centerHorizontal="true"
-        android:text="TextView"
+        android:text="@string/title_contract_summary"
         />
 
     <TextView
@@ -22,35 +23,38 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp"
-        android:text="TextView" />
+        android:layout_marginTop="60dp"
+        android:text="@string/description_contract_summary" />
 
 
     <TextView
         android:id="@+id/label_user_contract_summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="58dp"
-        android:layout_centerHorizontal="true"
-        android:text="TextView"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="16sp"
+        android:text="@string/label_user_contract_summary"
         />
 
     <TextView
         android:id="@+id/text_user_contract_summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:layout_centerHorizontal="true"
-        android:text="TextView"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="250dp"
+        android:textSize="16sp"
+        android:text="@string/text_user_contract_summary"
         />
 
     <TextView
         android:id="@+id/label_name_contract_summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
-        android:layout_centerHorizontal="true"
-        android:text="TextView"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="16sp"
+        android:text="@string/label_name_contract_summary"
      />
 
 
@@ -58,126 +62,152 @@
         android:id="@+id/text_name_contract_summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="158dp"
-        android:layout_centerHorizontal="true"
-        android:text="TextView"
-       />
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="150dp"
+        android:gravity="right"
+        android:text="@string/text_name_contract_summary"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/label_begin_contract_summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginTop="198dp"
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:textSize="16sp"
+        android:text="@string/label_begin_contract_summary"
+        android:layout_marginTop="200dp"
         />
 
     <TextView
         android:id="@+id/text_begin_contract_summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginTop="238dp"
-        android:layout_centerHorizontal="true"
+        android:text="@string/text_begin_contract_summary"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="250dp"
+        android:textSize="16sp"
         />
 
     <TextView
         android:id="@+id/label_end_contract_summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginTop="268dp"
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:textSize="16sp"
+        android:text="@string/label_end_contract_summary"
+        android:layout_marginTop="250dp"
         />
 
     <TextView
         android:id="@+id/text_end_contract_summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginTop="308dp"
-        android:layout_centerHorizontal="true"
+        android:text="@string/text_end_contract_summary"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="250dp"
+        android:textSize="16sp"
         />
+
 
     <TextView
         android:id="@+id/label_duration_contract_summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginTop="358dp"
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:textSize="16sp"
+        android:text="@string/label_duration_contract_summary"
+        android:layout_marginTop="300dp"
         />
 
     <TextView
         android:id="@+id/text_duration_contract_summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginTop="388dp"
-        android:layout_centerHorizontal="true"
+        android:text="@string/text_duration_contract_summary"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="250dp"
+        android:textSize="16sp"
         />
 
     <TextView
         android:id="@+id/label_goal_contract_summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginTop="428dp"
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:textSize="16sp"
+        android:text="@string/label_goal_contract_summary"
+        android:layout_marginTop="350dp"
+
         />
 
     <TextView
         android:id="@+id/text_goal_contract_summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginTop="458dp"
-        android:layout_centerHorizontal="true"
+        android:text="@string/text_goal_contract_summary"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="250dp"
+        android:textSize="16sp"
         />
 
     <TextView
         android:id="@+id/label_low_contract_summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginTop="488dp"
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:textSize="16sp"
+        android:text="@string/label_low_contract_summary"
+        android:layout_marginTop="400dp"
         />
 
     <TextView
         android:id="@+id/text_low_contract_summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginTop="528dp"
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="250dp"
+        android:textSize="16sp"
+        android:text="@string/text_low_contract_summary"
+        android:layout_marginTop="400dp"
         />
 
     <TextView
         android:id="@+id/label_high_contract_summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginTop="558dp"
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:textSize="16sp"
+        android:text="@string/label_high_contract_summary"
+        android:layout_marginTop="450dp"
+        />
+
+    <TextView
+        android:id="@+id/text_high_contract_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:textSize="16sp"
+        android:text="@string/text_high_contract_summary"
+        android:layout_marginTop="450dp"
         />
 
     <TextView
         android:id="@+id/label_profit_contract_summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginTop="588dp"
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:textSize="16sp"
+        android:text="@string/label_profit_contract_summary"
+        android:layout_marginTop="500dp"
         />
 
     <TextView
         android:id="@+id/text_profit_contract_summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginTop="628dp"
-        android:layout_centerHorizontal="true"
+        android:text="@string/text_profit_contract_summary"
+        android:textSize="16sp"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="250dp"
         />
 
     <Button
@@ -186,7 +216,7 @@
         android:layout_width="282dp"
         android:layout_height="50dp"
         android:layout_marginBottom="40dp"
-        android:layout_marginTop="658dp"
+        android:layout_marginTop="550dp"
         android:text="@string/confirm_contract"
         android:gravity="center"
         android:layout_centerHorizontal="true"

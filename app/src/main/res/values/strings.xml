@@ -32,10 +32,35 @@
 
     <!-- Contract Dialog -->
     <string name="welcome_description">Describe your project here.</string>
+    <string name="description_contract_summary">Confirm that all of the details are correct</string>
+    <string name="title_contract_summary">Contract Summary</string>
+
     <string name="label_profit_share_percentage">Profit Share</string>
     <string name="confirm_contract">Confirm</string>
     <string name="label_project_name">Project Name</string>
+    <string name="label_user_contract_summary">Contract Manager:</string>
+    <string name="label_name_contract_summary">Contract Name:</string>
+    <string name="label_begin_contract_summary">Begin Date:</string>
+    <string name="label_end_contract_summary">End Date:</string>
+    <string name="label_duration_contract_summary">Total Length:</string>
+    <string name="label_goal_contract_summary">Funding Goal:</string>
+    <string name="label_low_contract_summary">Low Estimate of Expected Profit:</string>
+    <string name="label_high_contract_summary">High Estimate of Expected Profit:</string>
+    <string name="label_profit_contract_summary">Profit Split:</string>
+
     <string name="create_contract">Create Contract</string>
+
+    <string name="text_project_name">Dummy Name</string>
+    <string name="text_user_contract_summary">Dummy Name</string>
+    <string name="text_name_contract_summary">Dummy Name</string>
+    <string name="text_begin_contract_summary">Dummy Name</string>
+    <string name="text_end_contract_summary">Dummy Name</string>
+    <string name="text_duration_contract_summary">Dummy Name</string>
+    <string name="text_goal_contract_summary">Dummy Name</string>
+    <string name="text_low_contract_summary">Dummy Name</string>
+    <string name="text_high_contract_summary">Dummy Name</string>
+    <string name="text_profit_contract_summary">Dummy Name</string>
+
 
 
 
