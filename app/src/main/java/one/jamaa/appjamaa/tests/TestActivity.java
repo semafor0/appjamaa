@@ -17,23 +17,5 @@ public class TestActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
-        FirestoreHelper firestoreHelper = new FirestoreHelper(getResources().getString(R.string.projects));
-        adapter = new ProjectsAdapter(firestoreHelper.getOptions());
-        RecyclerView recyclerView = findViewById(R.id.recycler_view_test);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(adapter);
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        adapter.startListening();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        adapter.stopListening();
     }
 }

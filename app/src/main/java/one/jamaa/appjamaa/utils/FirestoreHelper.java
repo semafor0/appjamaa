@@ -1,5 +1,6 @@
 package one.jamaa.appjamaa.utils;
 
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.util.Log;
 
@@ -25,23 +26,35 @@ public class FirestoreHelper {
 
     private static final String TAG = "FirestoreHelper";
 
-    private FirestoreRecyclerOptions<Projects> options;
+    private final CollectionReference collectionReference;
+    private FirestoreRecyclerOptions<Projects> projectsOptions;
+    private FirestoreRecyclerOptions<Users> usersOptions;
     private DocumentReference documentReference;
     private ListenerRegistration listenerRegistration;
 
     public FirestoreHelper(String information){
         String userID = FirebaseAuth.getInstance().getCurrentUser().getUid();
         FirebaseFirestore firebaseFirestore = FirebaseFirestore.getInstance();
-        CollectionReference collectionReference = firebaseFirestore.collection(information);
+        collectionReference = firebaseFirestore.collection(information);
         documentReference = collectionReference.document(userID);
         Query query = collectionReference.orderBy("duration", Query.Direction.ASCENDING);
-        options = new FirestoreRecyclerOptions.Builder<Projects>()
+        if (information.equals("Projects")){
+        projectsOptions = new FirestoreRecyclerOptions.Builder<Projects>()
                 .setQuery(query, Projects.class)
                 .build();
+        } else if(information.equals("Users")){
+            usersOptions = new FirestoreRecyclerOptions.Builder<Users>()
+                    .setQuery(query, Users.class)
+                    .build();
+        }
+
     }
+
+
 
     public void addProject(Projects project){
         Log.d(TAG, "addProject: ");
+        // TODO username einfügen;
         documentReference.set(project).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
@@ -90,7 +103,12 @@ public class FirestoreHelper {
         listenerRegistration.remove();
     }
 
-    public FirestoreRecyclerOptions<Projects> getOptions() {
-        return options;
+    public FirestoreRecyclerOptions<Projects> getProjectsOptions() {
+        return projectsOptions;
     }
+
+    public FirestoreRecyclerOptions<Users> getUsersOptions() {
+        return usersOptions;
+    }
+
 }

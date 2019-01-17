@@ -30,7 +30,7 @@ public class ProjectsFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_projects, container, false);
         FirestoreHelper firestoreHelper = new FirestoreHelper(getResources().getString(R.string.projects));
-        adapter = new ProjectsAdapter(firestoreHelper.getOptions());
+        adapter = new ProjectsAdapter(firestoreHelper.getProjectsOptions());
         RecyclerView recyclerView = view.findViewById(R.id.recycler_view_projects);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));

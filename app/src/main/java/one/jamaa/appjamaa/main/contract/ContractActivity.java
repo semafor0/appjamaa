@@ -20,11 +20,10 @@ import one.jamaa.appjamaa.registration.LoginActivity;
 import one.jamaa.appjamaa.utils.BottomNavigationViewHelper;
 import one.jamaa.appjamaa.utils.FirestoreHelper;
 
-public class ContractActivity extends AppCompatActivity implements NewContractFragment_1.NewContractListener {
+public class ContractActivity extends AppCompatActivity {
 
     private static final String TAG = "ContractActivity";
     private static final int ACTIVITY_NUM = 0;
-    private ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,11 +53,5 @@ public class ContractActivity extends AppCompatActivity implements NewContractFr
         Menu menu = bottomNavigationViewEx.getMenu();
         MenuItem menuItem = menu.getItem(ACTIVITY_NUM);
         menuItem.setChecked(true);
-    }
-
-    @Override
-    public void applyTexts(Projects project) {
-        FirestoreHelper firestoreHelper = new FirestoreHelper(getResources().getString(R.string.projects));
-        firestoreHelper.addProject(project);
     }
 }

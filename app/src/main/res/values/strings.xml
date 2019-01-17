@@ -58,6 +58,22 @@
     <!-- Information -->
     <string name="projects">Projects</string>
     <string name="users">Users</string>
+
     <string name="next_step">Next</string>
+    <string name="what_s_the_plan">What\'s the Plan?</string>
+    <string name="contract_description">Contract Description</string>
+    <string name="project_name">Name of your project (ex. Fishing Boat)</string>
+    <string name="location">Location</string>
+    <string name="project_description">Project description: Describe here why you think your project is likely to be successful and why you think it\'s a good idea for others to invest in it.</string>
+    <string name="label_project_name">Project Name</string>
+    <string name="dummy">dummy</string>
+
+    <!-- New Contract Fragement-->
+    <string name="new_contract_fragment_title_page_1">NewContractFragment_1</string>
+    <string name="new_contract_fragment_title_page_2">NewContractFragment_2</string>
+    <string name="new_contract_fragment_title_page_3">NewContractFragment_3</string>
+    <string name="new_contract_fragment_title_page_4">NewContractFragment_4</string>
+    <string name="create_contract">Create Contract</string>
+    <string name="percentage">%1$d%2$s</string>
 
 </resources>
