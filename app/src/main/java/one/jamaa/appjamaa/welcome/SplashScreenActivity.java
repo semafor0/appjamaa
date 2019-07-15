@@ -34,7 +34,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
             // TODO Thread.sleep() ist nur zum testen
             try {
-                Thread.sleep(2500);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 Log.d(TAG, "doInBackground: " + e.getMessage());
             }
