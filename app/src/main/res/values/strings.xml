@@ -24,6 +24,8 @@
     <string name="label_number_projects">Participated In</string>
     <string name="label_invested_in">Invested In</string>
     <string name="label_profitability">Profitability</string>
+    <string name="label_app_bar">Title</string>
+
 
 
     <!-- Welcome Screen -->
@@ -75,5 +77,16 @@
     <string name="new_contract_fragment_title_page_4">NewContractFragment_4</string>
     <string name="create_contract">Create Contract</string>
     <string name="percentage">%1$d%2$s</string>
+
+    <!-- Wallets-->
+    <string name="header_wallets">Wallets</string>
+    <string name="label_wallet">Wallet Name</string>
+    <string name="label_primary">XXX</string>
+    <string name="amount_primary">0.0000</string>
+    <string name="label_default">XXX</string>
+    <string name="amount_default">0.0000</string>
+
+
+
 
 </resources>
