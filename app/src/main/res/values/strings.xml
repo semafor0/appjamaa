@@ -68,6 +68,7 @@
     <string name="location">Location</string>
     <string name="project_description">Project description: Describe here why you think your project is likely to be successful and why you think it\'s a good idea for others to invest in it.</string>
     <string name="label_project_name">Project Name</string>
+    <string name="hint_project_location">Project Location</string>
     <string name="dummy">dummy</string>
 
     <!-- New Contract Fragement-->
