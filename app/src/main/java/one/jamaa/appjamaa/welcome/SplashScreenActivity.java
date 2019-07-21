@@ -18,6 +18,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate: ");
         setContentView(R.layout.activity_splash_screen);
         new PrefetchData().execute();
+
     }
 
     private class PrefetchData extends AsyncTask<Void, Void, Void> {

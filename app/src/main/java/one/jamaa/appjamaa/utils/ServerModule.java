@@ -79,7 +79,7 @@ public class ServerModule extends Application {
             user.create(new ResponseListener<User>() {
                 @Override
                 public void onSuccess(User user) {
-                    Toast.makeText(getApplicationContext(),"SUCCESSFUL USER REGISTRATION",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Successful User registration",Toast.LENGTH_SHORT).show();
                 }
                 @Override
                 public void onError(JSONObject error) {

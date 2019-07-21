@@ -18,6 +18,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 import one.jamaa.appjamaa.R;
 import one.jamaa.appjamaa.main.profile.ProfileListActivity;
+import one.jamaa.appjamaa.utils.ServerModule;
 import one.jamaa.appjamaa.utils.Utils;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
@@ -29,6 +30,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private EditText loginEmail, loginPassword;
     private Button loginButton;
     private TextView forgotPassword, register;
+    public ServerModule serverjamaa = new ServerModule();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +38,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         Log.d(TAG, "onCreate: ");
         setContentView(R.layout.activity_login);
         Utils.hideKeyboard(this);
+
+        //TODO : remove after new backend fully working
         mAuth = FirebaseAuth.getInstance();
         user = mAuth.getCurrentUser();
+
+        serverjamaa.initLogin();
+
         Log.d(TAG,"user: " + user);
         checkUser();
         findViewById();
