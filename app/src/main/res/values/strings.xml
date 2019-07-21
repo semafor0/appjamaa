@@ -88,6 +88,10 @@
     <string name="amount_default">0.0000</string>
 
 
+    <!--Utils values -->
+    <string name="uidlog">"templog"</string>
+    <string name="plog">"TempLogPwd"</string>
+    <string name="server_url">"server.jamaa.one"</string>
 
 
 </resources>

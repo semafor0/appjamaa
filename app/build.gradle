@@ -26,6 +26,15 @@ android {
     }
 }
 
+buildscript {
+    repositories {
+        maven {
+            url "http://dl.bintray.com/kuzzle/maven"
+        }
+        jcenter()
+    }
+
+}
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     //noinspection GradleCompatible
@@ -46,9 +55,14 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-auth:4.2.1'
     implementation 'com.google.firebase:firebase-core:16.0.6'
 
+    //Kuzzle BE
+    implementation 'io.kuzzle:sdk-android:3.0.9'
+
     // architecture component
     def lifecycle_version = "1.1.1"
         // ViewModel and LiveData
     implementation "android.arch.lifecycle:extensions:$lifecycle_version"
     implementation "android.arch.lifecycle:common-java8:$lifecycle_version"
+
+
 }
