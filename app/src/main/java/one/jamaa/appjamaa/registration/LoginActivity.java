@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         serverjamaa.initLogin();
 
         Log.d(TAG,"user: " + user);
-        checkUser();
+       // checkUser();
         findViewById();
         setOnClick();
     }
